@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+IP地址地理位置查询模块
+提供多个地理位置API的降级查询功能
+"""
+
 import requests
 from typing import Optional, Dict
 import time

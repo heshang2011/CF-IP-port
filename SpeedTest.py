@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+多线程速度测试模块
+使用CloudflareST.exe进行并发测速
+"""
+
 import subprocess
 import threading
 from queue import Queue

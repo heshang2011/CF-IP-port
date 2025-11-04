@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+XML到CSV解析模块
+将Masscan XML扫描结果转换为CSV格式
+"""
+
 import xml.etree.ElementTree as ET
 import csv
 import sys
