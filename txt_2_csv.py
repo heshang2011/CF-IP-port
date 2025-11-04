@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+文本到CSV转换模块
+将IP:端口列表转换为CSV格式
+"""
+
 import csv
 import sys
 import os

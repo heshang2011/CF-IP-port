@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 一键IP测试自动化脚本
 整合连通性测试、并发测速、地理位置查询的完整流程
@@ -574,6 +575,13 @@ class OneClickAutomation:
 
 def main():
     """Main entry point"""
+    # 检查环境和依赖
+    from check_dependencies import validate_environment
+    
+    if not validate_environment(auto_install=True):
+        print("\n❌ 环境检查失败，无法继续执行脚本")
+        sys.exit(1)
+    
     automation = OneClickAutomation()
     automation.run()
 

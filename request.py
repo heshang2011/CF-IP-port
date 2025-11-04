@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+HTTP连通性测试模块
+检查IP:端口是否可以连接到Cloudflare /cdn-cgi/trace 端点
+"""
+
 import requests
 import pandas as pd
 import time
@@ -49,6 +55,7 @@ def scan_ports(file_path: str) -> None:
                         file.write(f"{ip_port[0]}:{ip_port[1]}\n")
             time.sleep(0.01)  # 间隔 10 毫秒，防止 CPU 被干爆
 
-# 使用示例
-file_path = './05-可视化扫描结果.csv'  # 替换为CSV文件的实际路径
-scan_ports(file_path)
+if __name__ == "__main__":
+    # 使用示例
+    file_path = './05-可视化扫描结果.csv'  # 替换为CSV文件的实际路径
+    scan_ports(file_path)
